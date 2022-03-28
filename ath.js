@@ -16,8 +16,8 @@ let save = new sqlite3.Database(`${save_db}`, sqlite3.OPEN_READWRITE, (err) => {
 const config = {
   authentication: {
     options: {
-      userName: "ceorazan", // update me
-      password: "@T070aubk1" // update me
+      userName: "", // update me
+      password: "" // update me
     },
     type: "default"
   },
