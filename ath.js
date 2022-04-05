@@ -16,14 +16,14 @@ let save = new sqlite3.Database(`${save_db}`, sqlite3.OPEN_READWRITE, (err) => {
 const config = {
   authentication: {
     options: {
-      userName: "", // update me
-      password: "" // update me
+      userName: "", // object needs to be pulled from env
+      password: "" // object needs to be pulled from env
     },
     type: "default"
   },
-  server: "raiserver.database.windows.net", // update me
+  server: "raiserver.database.windows.net", // object needs to be pulled from env
   options: {
-    database: "mimik_licenseKeys", //update me
+    database: "", //object needs to be pulled from env
     encrypt: true
   }
 };
