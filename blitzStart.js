@@ -52,14 +52,14 @@ function createWindow(){
       const config = {
         authentication: {
           options: {
-            userName: "ceorazan", // update me
-            password: "@T070aubk1" // update me
+            userName: "", // insert .env string
+            password: "" // insert .env string
           },
           type: "default"
         },
-        server: "raiserver.database.windows.net", // update me
+        server: "raiserver.database.windows.net", // insert .env string
         options: {
-          database: "mimik_licenseKeys", //update me
+          database: "mimik_licenseKeys", // insert .env string
           encrypt: true
         }
       };
@@ -117,16 +117,6 @@ function createWindow(){
           });
       
         });
-    
-        //Emit Returned Value
-        //request.on("row", columns2 => { columns2.forEach(destroyS => { destroyS.value;
-        //
-        //  if(destroyS.value == false)
-        //  {//Reload page after destroyed
-        //    window.location.href = './serpentAuth';
-        //
-        //  }
-        //});});
     
          connection.execSql(request);
          connection.close();
