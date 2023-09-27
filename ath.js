@@ -21,7 +21,7 @@ const config = {
     },
     type: "default"
   },
-  server: "raiserver.database.windows.net", // object needs to be pulled from env
+  server: "", // object needs to be pulled from env
   options: {
     database: "", //object needs to be pulled from env
     encrypt: true
